@@ -113,11 +113,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lesson3.hw.task2_3.Main" />
+      <option name="MAIN_CLASS_NAME" value="lesson3.hw.task3.Main" />
       <module name="java-lessons-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson3.hw.task2_3.MusicalTool" />
+          <option name="PATTERN" value="lesson3.hw.task3.MusicalTool" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

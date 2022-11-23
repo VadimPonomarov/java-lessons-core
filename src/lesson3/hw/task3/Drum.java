@@ -1,4 +1,4 @@
-package lesson3.hw.task2_3;
+package lesson3.hw.task3;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,18 +11,19 @@ import java.util.ArrayList;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-public class Trumpet extends MusicalTool implements IMusicalTool {
-    private TrumpetSize trumpetSize;
+public class Drum extends MusicalTool implements IMusicalTool {
+    private DrumSize drumSize;
 
-    public Trumpet(String name, TrumpetSize trumpetSize) {
+    public Drum(String name, DrumSize drumSize) {
         super(name);
-        this.trumpetSize = trumpetSize;
+        this.drumSize = drumSize;
     }
 
     @Override
     public ArrayList<String> getAllCharacteristics() {
         ArrayList<String> list = new ArrayList<String>();
-        list.add("Диаметр трубы - " + this.getTrumpetSize());
+        list.add("Размер барабана - " + this.getDrumSize());
         return list;
     }
+
 }
