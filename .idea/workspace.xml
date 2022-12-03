@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="734217e0-037e-4ad1-a0e9-f6790857cf5e" name="Changes" comment="Lesson3_HW">
+      <change afterPath="$PROJECT_DIR$/src/lesson4/task1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lesson4/task1/UserAged.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3/hw/task2/Drum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/hw/task2_3/Drum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3/hw/task2/DrumSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/hw/task2_3/DrumSize.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3/hw/task2/Guitar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/hw/task2_3/Guitar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3/hw/task2/IMusicalTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/hw/task2_3/IMusicalTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3/hw/task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/hw/task2_3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3/hw/task2/MusicalTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/hw/task2_3/MusicalTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3/hw/task2/StringType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/hw/task2_3/StringType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3/hw/task2/Trumpet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/hw/task2_3/Trumpet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson3/hw/task2/TrumpetSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson3/hw/task2_3/TrumpetSize.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +18,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -72,20 +66,7 @@
       <recent name="Lesson2.hw2.task1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Lesson2.hw2.task2.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lesson2.hw2.task2.Main" />
-      <module name="java-lessons-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lesson2.hw2.task2.enums.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.lesson4.task1.Main">
     <configuration name="Lesson2.hw2.task3.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lesson2.hw2.task3.Main" />
       <module name="java-lessons-core" />
@@ -138,13 +119,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="lesson4.task1.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lesson4.task1.Main" />
+      <module name="java-lessons-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson4.task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lesson4.task1.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.lesson3.hw.task1.Main" />
         <item itemvalue="Application.Lesson2.hw2.task4.Main" />
         <item itemvalue="Application.Lesson2.hw2.task3.Main" />
-        <item itemvalue="Application.Lesson2.hw2.task2.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +154,8 @@
       <workItem from="1668704320773" duration="15402000" />
       <workItem from="1668953511888" duration="23517000" />
       <workItem from="1669226212024" duration="2971000" />
-      <workItem from="1669229378234" duration="15678000" />
+      <workItem from="1669229378234" duration="16842000" />
+      <workItem from="1670069211354" duration="15675000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1668203452837</created>
@@ -190,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669243803509</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lesson3_HW">
+      <created>1669245843072</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669245843072</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Lesson3_HW">
+      <created>1669246065263</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669246065263</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
