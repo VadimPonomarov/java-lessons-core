@@ -7,9 +7,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.util.Comparator;
+
 @Data
 @NoArgsConstructor
-public class UserAged extends User {
+public class UserAged extends User implements Comparator<UserAged> {
     private Integer age;
 
     public UserAged(int id,
@@ -28,5 +30,10 @@ public class UserAged extends User {
     @Override
     public String toString() {
         return "Age=" + age + "\n" + super.toString();
+    }
+
+    @Override
+    public int compare(UserAged o1, UserAged o2) {
+        return o1.getEmail().compareTo(o2.getEmail());
     }
 }
