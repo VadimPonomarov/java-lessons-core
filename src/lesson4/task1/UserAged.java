@@ -11,7 +11,7 @@ import java.util.Comparator;
 
 @Data
 @NoArgsConstructor
-public class UserAged extends User implements Comparator<UserAged> {
+public class UserAged extends User implements Comparator<UserAged>, Comparable<UserAged> {
     private Integer age;
 
     public UserAged(int id,
@@ -35,5 +35,10 @@ public class UserAged extends User implements Comparator<UserAged> {
     @Override
     public int compare(UserAged o1, UserAged o2) {
         return o1.getEmail().compareTo(o2.getEmail());
+    }
+
+    @Override
+    public int compareTo(UserAged o) {
+        return o.getName().compareTo(this.getName());
     }
 }

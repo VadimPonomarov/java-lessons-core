@@ -5,9 +5,7 @@ import lesson1.hw.classes.Company;
 import lesson1.hw.classes.Geo;
 import lombok.NoArgsConstructor;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,7 +27,7 @@ public class Main {
 
         userAged.sort((o1, o2) -> o1.getAge() - o2.getAge());
 
-        /*------------------------------------------------------*/
+        /*-----------------------Task1.Var1--------------------------*/
 
         System.out.println("====Task1.var1====" + "\n");
         for (UserAged _userAged : userAged) {
@@ -38,9 +36,9 @@ public class Main {
         for (UserAged _userAged : userAged) {
             System.out.println("\n==========\n" + _userAged + "\n");
         }
-        /*------------------------------------------------------*/
+
+        /*-----------------------Task1.Var2--------------------------*/
         userAged.sort(Comparator.comparingInt(UserAged::getAge));
-        /*------------------------------------------------------*/
 
         System.out.println("\n" + "====Task1.var2====" + "\n");
         for (UserAged _userAged : userAged) {
@@ -50,33 +48,32 @@ public class Main {
             System.out.println("\n==========\n" + _userAged + "\n");
         }
 
-        /*------------------------------------------------------*/
+
+        /*-------------------Task2.Var1.Ascending------------------------*/
 
         userAged.sort((o1, o2) -> o1.getName().length() - o2.getName().length());
-
-        /*--------------------------Task2----------------------------*/
 
         System.out.println("\n" + "====Task2.Var1.Ascending====" + "\n");
         for (UserAged _userAged : userAged) {
             System.out.println(_userAged.getName());
         }
 
-        /*----------------------------Var1--------------------------*/
+        /*-------------------Task2.Var1.Descending------------------------*/
 
         userAged.sort((o1, o2) -> o2.getName().length() - o1.getName().length());
-
-        /*------------------------------------------------------*/
 
         System.out.println("\n" + "====Task2.Var1.Descending====" + "\n");
         for (UserAged _userAged : userAged) {
             System.out.println(_userAged.getName());
         }
-        /*------------------------------------------------------*/
+
+        /*----------------with usage of Custom Comparator (as instance)---*/
 
         class MyComparator implements Comparator<UserAged> {
 
             @Override
             public int compare(UserAged o1, UserAged o2) {
+
                 return o1.getName().length() - o2.getName().length();
             }
 
@@ -84,20 +81,20 @@ public class Main {
                 return -(o1.getName().length() - o2.getName().length());
             }
         }
+
+        /*--------------------Task2.Var2.Ascending----------- -------------*/
+
         MyComparator myComparator = new MyComparator();
         userAged.sort(((o1, o2) -> myComparator.compare(o1, o2)));
-
-        /*--------------------------Var2----------------------------*/
 
         System.out.println("\n" + "====Task2.Var2.Ascending====" + "\n");
         for (UserAged _userAged : userAged) {
             System.out.println(_userAged.getName());
         }
-        /*------------------------------------------------------*/
+
+        /*--------------------Task2.Var2.Descending------------------------*/
 
         userAged.sort(((o1, o2) -> myComparator.compareReverse(o1, o2)));
-
-        /*------------------------------------------------------*/
 
         System.out.println("\n" + "====Task2.Var2.Descending====" + "\n");
         for (UserAged _userAged : userAged) {
@@ -108,11 +105,37 @@ public class Main {
 
         userAged.sort(Comparator.comparing(UserAged::getEmail));
 
-        /*------------------------------------------------------*/
+        /*----------------------------Var1--------------------------*/
 
-        System.out.println("\n" + "====Task3====" + "\n");
+        System.out.println("\n" + "====Task3.Var1====" + "\n");
         for (UserAged _userAged : userAged) {
             System.out.println(_userAged.getName() + " " + _userAged.getEmail());
         }
+
+        /*----------------------------Var2--------------------------*/
+
+        TreeSet<UserAged> userAgedSet = new TreeSet<>();
+        userAgedSet.addAll(userAged);
+        System.out.println("\n" + "====Task3.Var2.Descending====" + "\n");
+        for (UserAged _userAged : userAged) {
+            System.out.println(_userAged.getName() + " " + _userAged.getName());
+        }
+
+        /*----------------------------Var3.With Iterator-------------*/
+
+        TreeSet<UserAged> userAgedSet1 = new TreeSet<>();
+        Iterator<UserAged> iterator = userAged.iterator();
+        while (iterator.hasNext()) {
+            userAgedSet1.add(iterator.next());
+        }
+        System.out.println("\n" + "====Task3.Var3.With Iterator====" + "\n");
+        for (UserAged _userAged : userAged) {
+            System.out.println(_userAged.getName() + " " + _userAged.getName());
+        }
+
+        System.out.println("\n" + "====Task3.Var3.With Iterator and stream====" + "\n");
+        userAged.stream().forEach(userAged1 ->
+                System.out.println(userAged1.getName() + " " + userAged1.getName())
+        );
     }
 }
